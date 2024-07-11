@@ -89,7 +89,7 @@ $("#closeBtn").on("click",function(){
 
 
 $("#sideBarOpenBtn").on("click",function(){
-  // when click on the open button in the Hero section, 
+  // When click on the open button in the Hero section, 
   // in Small Window ==> open the side-bar by making width is 100 and padding-left of items is 8
   // in Large Window ==> open the side-bar by making width is 200 and padding-left of items is 32 (the default)
   if(windowIsSmall()){

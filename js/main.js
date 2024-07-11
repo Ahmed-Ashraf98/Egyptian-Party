@@ -1,13 +1,19 @@
 // * ============================ [ Elements ] ===================================
+
 const sideBar = $("#sideBar");
 const heroWrapper = $(".hero-wrapper");
+
 // * =================================[ Settings ]====================================
+
 const animationInSec = 500;
 const maxMsgChars = 100;
+
 // * ==================================[ App Start ]===================================
+
 $(document).ready(function() {
-    $(`#signerOne+.signer-details`).slideToggle(animationInSec); // when page load, open the first signer box
+  $(`#signerOne+.signer-details`).slideToggle(animationInSec); // when page load, open the first signer box
 });
+
 // * =============================[ Singers Toggles ]==========================================
 
 let signerName = $(".signer-name");
@@ -17,10 +23,7 @@ signerName.on("click",function(event){ // on click on signer box
     $(`#${eleId}+.signer-details`).slideToggle(animationInSec); // show / hide current element
 });
 
-
 // * =============================[ Timer ]==========================================
-
-
 
 // Set the date we're counting down to
 let countDownDate = new Date("Apr 12, 2027 10:37:59").getTime();
@@ -61,10 +64,9 @@ let updateCountDown = setInterval(function() {
 $("#message").on("input",function(){
     let vlaueLen = this.value.length; // get current value length for the message input
     $("#msgRemainChars").text(`${ maxMsgChars - (vlaueLen) }`) // update the remaining characters 
-})
+});
 
-
-// * =============================[ SideBar ]==========================================
+// * =============================[ SideBar ]================================================
 
 
 let windowIsSmall = () => window.innerWidth < 555; // check if the window width is less than 555px or not

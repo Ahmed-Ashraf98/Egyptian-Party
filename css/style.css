@@ -1,0 +1,226 @@
+/* * =================[ Font Settings ]=========================== */
+
+@font-face {
+    font-family:Rubik;
+    src: url("../webfonts/Rubik/Rubik-Light.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family:Rubik;
+    src: url("../webfonts/Rubik/Rubik-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:Rubik;
+    src: url("../webfonts/Rubik/Rubik-Medium.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family:Rubik;
+    src: url("../webfonts/Rubik/Rubik-Bold.ttf");
+    font-weight: 700;
+}
+
+
+/* * ===================[  Global ]============================== */
+
+:root{
+    --main-color :#212529;
+    --secondary-color:#777;
+    --main-bg-color:#D62E33;
+    --main-bg-color-rgb:214, 46, 51;
+    /* --main-bg-light-color : */
+
+}
+
+/** ==================== [ Utilites ] ==========================  */
+
+.section-padding{
+    padding: 100px 0;
+}
+
+/* * ====================[ General Settings ]==================== */
+
+*{
+    word-break: break-all;
+}
+
+body{
+    font-family:Rubik;
+}
+
+.h1, h1 {
+    font-size: calc(2.375rem + 1.8vw);
+    white-space:normal;
+}
+
+
+/** ================================== [ Sidebar ] ======================================== */
+
+.menu li{
+  padding: 20px 8px 20px 32px;
+}
+
+#sideBar{
+    word-break: normal;
+    width:0;
+    background-color: #212529;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+#sideBar *{
+    word-break: normal;  
+}
+
+#closeBtn{
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        color: var(--main-bg-color);
+    }
+}
+
+#sideBar .menu{
+    
+   & a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+   } 
+
+   & a:hover{
+    color: var(--main-bg-color);
+   } 
+}
+
+#sideBarOpenBtn{
+    cursor: pointer;
+}
+
+/** ====================================[ Hero Section ]===================================== */
+
+.hero{
+    color: #fff;
+    background:linear-gradient(90deg, rgba(164,28,28,0.5579481792717087) 91%, rgba(121,9,9,1) 100%), url("../images/hero-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+
+}
+
+.hero-wrapper{
+    margin-left:10px;
+}
+
+/** =================================[ Signers ]======================================= */
+
+.signer-name{
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+.signer-details{
+    display: none;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+/** ==============================[ Timmer Section ]======================================= */
+
+#timmer{
+    color: #fff;
+    background:linear-gradient(90deg, rgba(164,28,28,0.5579481792717087) 100%, rgba(121,9,9,1) 0%), url("../images/join-us.jpeg");
+    background-position: center;
+    background-size: cover;   
+
+    & .timmer-wrapper div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ffffff ; 
+        min-width: 120px;
+        min-height: 120px; 
+        margin-right: 10px;
+        margin-top: 10px;
+
+        & p{
+            margin: 0;
+        }
+    }
+
+}
+
+.timmer-section{
+    background: linear-gradient(90deg, rgba(164,28,28,0.5579481792717087) 100%, rgba(121,9,9,1) 100%), url("../images/join-us.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.timmer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.expMessage{
+    display: none;
+}
+
+/** ===============================[ Contact Us ]===================================== */
+
+
+#joinUs{
+    color: var(--secondary-color);
+    h2,h3{
+        color: var(--main-color);
+    }
+}
+
+.contact-details li{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#joinUs .social{
+
+    & li {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    
+    & a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
+
+        &:hover{
+            color: #fff; 
+            background-color:var(--main-bg-color);
+            border-color: #fff;
+        }
+    }
+}
+
+
+.form-control:focus {
+    border-color: var(--main-bg-color);
+    box-shadow: 0 0 0 .25rem rgba(var(--main-bg-color-rgb), .25);
+}
+

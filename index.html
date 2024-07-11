@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+  
+    <!--* =================== [ Start SideBar ] ================= -->
+
+    <aside id="sideBar" class="position-fixed">
+      
+      <div class="text-end m-2 text-white">
+        <i id="closeBtn" class="fa-solid fa-xmark fs-2"></i>
+      </div>
+  
+      <ul class="menu list-unstyled h-100 mt-5 d-flex flex-column justify-content-start fs-4">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#signersGroup">Details</a>
+          </li>
+          <li>
+            <a href="#timmer">Duration</a>
+          </li>
+          <li>
+            <a href="#joinUs">Contact</a>
+          </li>
+      </ul>
+    </aside>
+    
+    <!--! =================== [ End SideBar ] ================= -->
+    
+    <header class="hero position-relative">
+      <div class="hero-wrapper h-100 d-flex flex-column justify-content-center align-items-center position-relative">
+        <h1>ُEgyption Party</h1>
+        <p>Let's have Fun</p>
+  
+        <div id="sideBarOpenBtn" class="text-white align-self-start fs-3">
+          <i class="fa-solid fa-bars"></i>
+          <span>Open</span>
+        </div>
+      </div>
+    </header>
+
+   
+
+    <main>
+      
+      <!--*================ [ Start ] Singer Section ===============-->
+      <section id="signersGroup" class="my-5 section-padding">
+        <div class="container">
+   
+            <div class="text-center">
+              <h3 id="signerOne" class="signer-name mb-0 py-2">ٍSinger one</h3>
+              <div class="signer-details">
+                <p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              </div>
+            </div> 
+
+            <div class="text-center">
+              <h3 id="signerTwo" class="signer-name mb-0 py-2">ٍSinger Two</h3>
+              <div class="signer-details p-1 py-2">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              </div>
+            </div> 
+
+            <div class="text-center">
+              <h3 id="signerThree" class="signer-name mb-0 py-2">ٍSinger Three</h3>
+              <div class="signer-details p-1 py-2">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              </div>
+            </div> 
+
+            <div class="text-center">
+              <h3 id="signerFour" class="signer-name mb-0 py-2">ٍSinger Four</h3>
+              <div class="signer-details p-1 py-2">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              </div>
+            </div> 
+         
+        </div>
+      </section>
+      <!--!================ [ End ] Singer Section ===============-->
+
+
+      <!--*================ [ Start ] Timmer Section ===============-->
+      <section id="timmer" class="mt-5 section-padding">
+          <div class="container">
+            <div class="timmer-wrapper">
+              <div class="days"><p class="fs-4"></p></div>
+              <div class="hours"><p class="fs-4"></p></div>
+              <div class="minutes"><p class="fs-4"></p></div>
+              <div class="seconds"><p class="fs-4"></p></div>
+            </div>
+            <div class="expMessage text-center"><p class="fs-1 fw-bold"></p><i class="fa-solid fa-face-frown fs-1"></i></div>
+          </div>
+            
+      </section>
+      <!--!================ [ End ] Timmer Section ===============-->
+      
+      <!--*================ [ Start ] Join Us Section ===============-->
+      <section id="joinUs" class="mt-5 section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+              <h2>JOIN US</h2>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="row gx-1 gx-sm-5 gy-2">
+              <div class="col-md-6">
+                <h3>CONTACT INFO</h3>
+                <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
+                <ul class="contact-details list-unstyled">
+                  <li><i class="fa-solid fa-location-pin me-2"></i> <span>New Street 22545, Nexa Road, New York City, USA</span></li>
+                  <li><i class="fa-solid fa-envelope me-2"></i> <span class="text-danger">hello@uigrid.com</span></li>
+                  <li><i class="fa-solid fa-phone me-2"></i> <span>001-000-000-000</span></li>
+                </ul>
+                <ul class="social list-unstyled d-flex flex-wrap">
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>  
+                  </li>
+                  <li>
+                     <a href="">
+                       <i class="fa-brands fa-instagram"></i>
+                     </a>
+                    </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-dribbble"></i>
+                    </a>
+                    </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control mb-2" id="message" rows="6" maxlength="100" placeholder="Leave a message"></textarea>
+                    <span>
+                      <span id="msgRemainChars" class="text-danger">100</span> Characters Remaining
+                    </span>
+                  </div>
+                  <button class="btn btn-danger">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--!================ [ End ] Join Us Section ===============-->
+    
+    </main>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
